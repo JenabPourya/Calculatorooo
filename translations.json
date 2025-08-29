@@ -1,0 +1,93 @@
+{
+  "fa": {
+    "language": "زبان",
+    "theme": "تم",
+    "light": "روشن",
+    "dark": "تاریک",
+    "system": "مطابق",
+    "error": "خطا",
+    "contact_us": "ارتباط با ما"
+  },
+  "en": {
+    "language": "Language",
+    "theme": "Theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "error": "Error",
+    "contact_us": "Contact Us"
+  },
+  "ar": {
+    "language": "اللغة",
+    "theme": "ثيم",
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "نظام",
+    "error": "خطأ",
+    "contact_us": "اتصل بنا"
+  },
+  "es": {
+    "language": "Idioma",
+    "theme": "Tema",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "error": "Error",
+    "contact_us": "Contáctenos"
+  },
+  "ru": {
+    "language": "Язык",
+    "theme": "Тема",
+    "light": "Светлый",
+    "dark": "Темный",
+    "system": "Система",
+    "error": "Ошибка",
+    "contact_us": "Связаться с нами"
+  },
+  "it": {
+    "language": "Lingua",
+    "theme": "Tema",
+    "light": "Chiaro",
+    "dark": "Scuro",
+    "system": "Sistema",
+    "error": "Errore",
+    "contact_us": "Contattaci"
+  },
+  "zh": {
+    "language": "语言",
+    "theme": "主题",
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统",
+    "error": "错误",
+    "contact_us": "联系我们"
+  },
+  "ja": {
+    "language": "言語",
+    "theme": "テーマ",
+    "light": "明るい",
+    "dark": "暗い",
+    "system": "システム",
+    "error": "エラー",
+    "contact_us": "お問い合わせ"
+  },
+  "ko": {
+    "language": "언어",
+    "theme": "테마",
+    "light": "밝은",
+    "dark": "어두운",
+    "system": "시스템",
+    "error": "오류",
+    "contact_us": "문의하기"
+  },
+  "ger": {
+    "language": "Sprache",
+    "theme": "Thema",
+    "light": "Helles",
+    "dark": "Dunkles",
+    "system": "System",
+    "error": "Fehler",
+    "contact_us": "Kontaktieren Sie uns"
+  }
+
+}
