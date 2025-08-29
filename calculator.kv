@@ -8,8 +8,8 @@
         height: '40dp'
         Spinner:
             text: root.translate("language")
-            values: ['فارسی', 'العربية', 'English', 'Русский', 'Italiano', '中文', '日本語', '한국어', 'Español']
-            on_text: root.change_language({'فارسی':'fa','العربية':'ar','English':'en','Русский':'ru','Italiano':'it','中文':'zh','日本語':'ja','한국어':'ko','Español':'es'}[self.text])
+            values: ['فارسی', 'العربية', 'English', 'Русский', 'Italiano', '中文', '日本語', '한국어', 'Español', 'Deutsch']
+            on_text: root.change_language({'فارسی':'fa','العربية':'ar','English':'en','Русский':'ru','Italiano':'it','中文':'zh','日本語':'ja','한국어':'ko','Español':'es','Deutsch':'German'}[self.text])
         Spinner:
             text: root.translate("theme")
             values: [root.translate("light"), root.translate("dark"), root.translate("system")]
@@ -47,7 +47,7 @@
             text: " +989210423609 |  alizadepourya@gmail.com"
             font_size: 14
         Label:
-            text: " Github.com/Jenabpourya |  t.me/POURYA_ALIZADEH"
+            text: " Github.com/Jenabpourya |  https://t.me/POURYA_ALIZADEH
             font_size: 14
 Button:
     text: root.translate("history")
