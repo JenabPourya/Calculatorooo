@@ -30,6 +30,10 @@
         text: "="
         font_size: 32
         on_press: root.calculate()
+        
+    Button:
+        text: root.translate("history")
+        on_press: root.show_history()
 
     Label:
         id: output
@@ -39,7 +43,7 @@
     BoxLayout:
         orientation: 'vertical'
         size_hint_y: None
-        height: '100dp'
+        height: '250dp'
         Label:
             text: root.translate("contact_us")
             font_size: 18
@@ -47,26 +51,37 @@
             text: " +989210423609 |  alizadepourya@gmail.com"
             font_size: 14
         Label:
-            text: " Github.com/Jenabpourya |  https://t.me/POURYA_ALIZADEH
+            text: " Github.com/Jenabpourya |  https://t.me/POURYA_ALIZADEH "
             font_size: 14
 Button:
     text: root.translate("history")
     on_press: root.show_history()
-def show_history(self):
-    hist_text = "\n".join(self.history[-10:]) or self.translate("no_history")
-    from kivy.uix.popup import Popup
-    from kivy.uix.label import Label
-    popup = Popup(title=self.translate("history"), content=Label(text=hist_text), size_hint=(0.8, 0.6))
-    popup.open()
+
 GridLayout:
     cols: 4
     size_hint_y: None
     height: '200dp'
-    Button: text: "sin" on_press: root.ids.input.text += "sin("
-    Button: text: "cos" on_press: root.ids.input.text += "cos("
-    Button: text: "tan" on_press: root.ids.input.text += "tan("
-    Button: text: "log" on_press: root.ids.input.text += "log("
-    Button: text: "ln" on_press: root.ids.input.text += "ln("
-    Button: text: "√" on_press: root.ids.input.text += "sqrt("
-    Button: text: "^" on_press: root.ids.input.text += "**"
-    Button: text: "!" on_press: root.ids.input.text += "fact("
+    Button:
+        text: "sin"
+        on_press: root.ids.input.text += "sin("
+    Button:
+        text: "cos"
+        on_press: root.ids.input.text += "cos("
+    Button:
+        text: "tan"
+        on_press: root.ids.input.text += "tan("
+    Button:
+        text: "log"
+        on_press: root.ids.input.text += "log("
+    Button:
+        text: "ln"
+        on_press: root.ids.input.text += "ln("
+    Button:
+        text: "√"
+        on_press: root.ids.input.text += "sqrt("
+    Button:
+        text: "^"
+        on_press: root.ids.input.text += "**"
+    Button:
+        text: "!"
+        on_press: root.ids.input.text += "fact("

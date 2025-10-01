@@ -8,31 +8,15 @@ import json
 class Calculator(BoxLayout):
     result_preview = StringProperty("")
     theme_mode = StringProperty("system")
-    current_language = StringProperty("fa")
+    current_language = StringProperty("en")
     translations = ObjectProperty({})
-
-history = []
-
-def calculate(self):
-    try:
-        expr = self.ids.input.text  # User input
-        allowed = {
-            "sin": lambda x: math.sin(math.radians(x)),
-            "cos": lambda x: math.cos(math.radians(x)),
-            "tan": lambda x: math.tan(math.radians(x)),
-            "log": math.log10,
-            "ln": math.log,
-            "sqrt": math.sqrt,
-            "pow": math.pow,
-            "fact": math.factorial,
-            "pi": math.pi,
-            "e": math.e
-        }
-        result = eval(expr, {"__builtins__": None}, allowed)
-        self.ids.output.text = str(round(result, 6))
-        self.history.append(f"{expr} = {result}")
-    except Exception as e:
-        self.ids.output.text = "Error"
+    history = []
+    def show_history(self):
+        hist_text = "\n".join(self.history[-10:]) or self.translate("no_history")
+        from kivy.uix.popup import Popup
+        from kivy.uix.label import Label
+        popup = Popup(title=self.translate("history"), content=Label(text=hist_text), size_hint=(0.8, 0.6))
+        popup.open()
 
     def __init__(self, **kwargs):
         super().__init__(**kwargs)
