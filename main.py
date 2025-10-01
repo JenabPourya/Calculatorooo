@@ -62,8 +62,11 @@ class Calculator(BoxLayout):
         else:
             Window.clearcolor = (0.95, 0.95, 0.95, 1)
 
+from kivy.lang import Builder
+
 class CalcApp(App):
     def build(self):
+        Builder.load_file("calculator.kv")
         return Calculator()
 
 CalcApp().run()
